@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cice.myviewpager.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_gravity="center"
+        android:id="@+id/flgustar">
+
+        <Button
+            android:layout_width="250px"
+            android:layout_height="150px"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/like"
+            android:id="@+id/megusta"
+            />
+        <Button
+            android:layout_width="250px"
+            android:layout_height="150px"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/dislike"
+            android:id="@+id/nomegusta"
+            />
+
+    </FrameLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/miviewpager" />
+
+</LinearLayout>
